@@ -1,7 +1,7 @@
 class Box {
-    int width;
-    int height;
-    int depth;
+   private int width;
+   private int height;
+   private int depth;
     Box(Box b)
     {
         width=b.width;
@@ -14,6 +14,11 @@ class Box {
         this.height=h;
         this.depth=d;
     }
+    Box(int height)
+    {
+        this.width=this.depth=this.height=height;
+
+    }
     Box()
     {
         width=-1;
@@ -25,11 +30,6 @@ class Box {
     {
         return height*width*depth;
     }
-
-
-}
-class BoxWeight extends Box
-{
 
 
 }
